@@ -1,0 +1,67 @@
+from random import randint, choice
+
+def normal_attack():
+    return randint(2, 8)
+
+
+def Hanega_Song_of_the_Wind():
+    global mana
+    if mana < 10:
+        print("-"*40)
+        print("you don't have enough mana")
+        return 0
+    mana -= 10
+    return randint(10, 18)
+
+def Bane_of_All_Evil():
+    global mana
+    if mana < 20:
+        print("-"*40)
+        print("you don't have enough mana")
+        return 0
+    mana -= 20
+    return randint(20, 30)
+
+
+
+def choose_attack():
+    print('a/A - Normal attack - deals 2 - 8')
+    print('b/B - Hanega_Song_of_the_Wind - deals 10 - 18 dmg')
+    print('c/C - Bane_of_All_Evil - deals 20 - 30 dmg')
+    co = input().upper()
+    if co == 'A':
+        return normal_attack()
+    elif co == 'B':
+        return Hanega_Song_of_the_Wind()
+    elif co == 'C':
+        return Bane_of_All_Evil()
+    else:
+        print("too bad")
+        return 0
+#---------/26linijek-----------------
+
+#------------starter ataki--------
+
+def choose_starter_attack():
+    print('a/A - Normal attack - deals 2 - 8')
+    co = input().upper()
+    if co == 'A':
+        return normal_attack()
+    else:
+        print("too bad")
+        return 0
+#------7-----
+#-starter-atakiv2----------
+
+def choose_satrterattack():
+    print('a/A - Normal attack - deals 2 - 8')
+    print('b/B - Hanega_Song_of_the_Wind - deals 10 - 18 dmg')
+    co = input().upper()
+    if co == 'A':
+        return normal_attack()
+    elif co == 'B':
+        return Hanega_Song_of_the_Wind()
+    else:
+        print("too bad")
+        return 0
+#-----9----
