@@ -1,0 +1,42 @@
+#---------stage5, trudniejsze potwory.------------
+##---
+print("stage 5 --- its getting harder")
+
+while life > 0:
+    opponents2 = random_oponents2()
+    print("-"*40)
+
+
+    while opponents2[1] > 0 and life > 0:
+        print(f"{name} fight against {opponents2[0]}")
+        print(f"opponent have {opponents2[1]} HP and deals {opponents2[2]} damage")
+       
+        life -= opponents2[2]
+        if life <= 0:
+            print("you, died")
+            break
+
+
+        print(f"you have {life} HP and {mana} mana")
+        atak = choose_satrterattack()
+        opponents2[1] -= atak
+        print(f"deals {atak} damage")
+
+        if opponents2[1] <= 0:
+            print("you did it!")
+            pokonane_stwóry += 1
+            print(f"{opponents2} drops 10 mora")
+            money += 10
+
+
+    if life <100:
+        print("you gain 5hp")
+        life += 5
+        
+    if mana <100:
+        print("you gain 5mana")
+        mana += 5
+    break
+
+print("-"*40)
+print(f"life left: {life} mana left: {mana}")
