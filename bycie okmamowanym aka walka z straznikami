@@ -1,14 +1,4 @@
-print("Wanting to leave and continue your adventure the same man starts shouting something")
-print("old man: GUARDS!!! HE ROBBED ME")
-def choose_anwser11():
-    print("a/A - run")
-    print("else - ignore")
-    odp11 = input().upper()
-    if odp11 == 'A':
-        print("they are after you, and they catch up with you")
-    else:
-        print("guards approach you")
-odp11 = choose_anwser11()
+
 #-lkmao
 print(" guard1:  you are under arrest for stealing.")
 def choose_anwser12():
