@@ -1,0 +1,42 @@
+#--------------------stage1----------------
+pokonane_stwóry = 0
+
+print('something is moving towards you')
+
+while life > 0:
+    opponent = random_starter_oponents()
+    print("-"*40)
+
+
+    while opponent[1] > 0 and life > 0:
+        print(f"{opponent[0]} attacks you!")
+        print(f"opponent have {opponent[1]} HP and deals {opponent[2]} damage")
+       
+        life -= opponent[2]
+        if life <= 0:
+            print("you, died, ON A FIRST DAY. Kazuko will not be happy")
+            break
+
+
+        print(f"you have {life} left HP and {mana} mana left ")
+        atak = choose_starter_attack()
+        opponent[1] -= atak
+        print(f"deals {atak} damage")
+
+        if opponent[1] <= 0:
+            print("your firsk kill!")
+
+
+    if opponent[1] <= 0:
+        pokonane_stwóry += 1
+
+    if life <100:
+        print("you gain 1hp")
+        life += 1
+    break
+
+print("-"*40)
+print(f"life left: {life} mana left: {mana}")
+print("new attack unlocked")
+print("-"*40)
+#--------------17linijekTvT-------------
