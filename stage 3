@@ -1,0 +1,44 @@
+#------------------stage3, to samo---------------
+print("-"*40)
+print("stage3")
+
+while life > 0:
+    opponent = random_oponents()
+    print("-"*40)
+
+
+    while opponent[1] > 0 and life > 0:
+        print(f"{name} fight against {opponent[0]}")
+        print(f"opponent have {opponent[1]} HP and deals {opponent[2]} damage")
+       
+        life -= opponent[2]
+        if life <= 0:
+            print("you, died")
+            break
+
+
+        print(f"you have {life} HP and {mana} mana")
+        atak = choose_satrterattack()
+        opponent[1] -= atak
+        print(f"deals {atak} damage")
+
+        if opponent[1] <= 0:
+            print("you did it!")
+
+
+    if opponent[1] <= 0:
+        pokonane_stwóry += 1
+
+    if life <100:
+        print("you gain 1hp")
+        life += 1
+        
+    if mana <100:
+        print("you gain 5mana")
+        mana += 5
+
+    break
+
+print("-"*40)
+print(f"life left: {life} mana left: {mana}")
+#------------15inijek (powtórka-----------
