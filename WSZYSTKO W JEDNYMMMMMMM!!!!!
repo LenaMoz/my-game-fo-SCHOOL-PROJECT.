@@ -1,0 +1,747 @@
+#-----start-------
+print("-"*40)
+print("....")
+print("it's dark and quiet wherever you are right now")
+print("well, it was, untill you looked around and noticed it.")
+print("I bet you've never seen this thing in your life.")
+print("as big as towers and as dark as void, there it is, the creation itself created by the devil.")
+print("you don't have enough time to even see it clearly before the creature is pierced by light.")
+print("the thing, or should you say, a person is walking towards you after killing that thing, ew.")
+print("???: oh, I see, we have a new soul.")
+print("you can say, It's not a normal person. She's pretty and all, she's more like an angel")
+
+
+def choose_anwser():
+    print('a/A - Who are you?')
+    print('b/B - where am I?')
+    print('c/C - what was that?')
+    print('else - *says nothing*')
+    odp = input().upper()
+    if odp == 'A':
+        print("???: oh, right, my name is Kazuko,")
+    elif odp == 'B':
+        print("???: we are inside the void, everyone after death goes here.")
+    elif odp == 'C':
+        print("???: creation itself created by the Satan, ugh. I bet he's declaring war on us, but you don't have to worry,")
+    else:
+        print("???: you don't want to ask anything? okay then.")
+        return 0
+print("-"*40)
+anwser = choose_anwser()
+print("-"*40)
+
+#--------8-------------
+#-------------------kim chce być?----------------
+print("Kazuko: oh, right, my name is Kazuko,")
+print("Kazuko: anyway, So, what do you want to become in your new future life?")
+print("Kazuko: there are a lot of options.... you can be an ordinary person again , of course ,")
+print("Kazuko: or... you can be just like me!")
+print("Kazuko: you may also be... whatever you want.")
+print("so?")
+
+def choose_anwser2():
+    print('a/A - I can be a human again.')
+    print('b/B - I can be like you.')
+    print('c/C - I want to be....')
+    print('else - *says nothing*')
+    odp = input().upper()
+    if odp == 'A':
+        print("Kazuko: oh, wait. *sigh* sorry, I just got a communikt that for becna moments they are not accepting new people. you know, overpopulation. in this case you are left with being a magician.")
+    elif odp == 'B':
+        print("yeah, no. I lied. You have a lot of sins on your list. if you want to be who i am, try to do better in this new life")
+    elif odp == 'C':
+        creation = input('I want to be:')
+        print("Kazuko: pff-" f"{creation}? nah... you will be a magician!")
+    else:
+        print("Kazuko: in that case I will choose for you. ok?")
+        print("T / else - ok")
+        print("F - okey I can choose.")
+        odp2 = input().upper()
+        if odp2 == 'T':
+            print("Kazuko: then you will... magician.")
+        elif odp2 == 'F':
+            def choose_anwser2():
+                print('a/A - I can be a human again,')
+                print('b/B - I can be like you,')
+                print('c/C - I want to be....')
+                odp3 = input().upper()
+                if odp3 == 'A':
+                    print("Kazuko: oh, wait. *sigh* right! sorry, I just got a communikt that for becna moments they are not accepting new people. you know, overpopulation. in this case you are left with being a magician.")
+                elif odp3 == 'B':
+                    print("yeah, no. I lied. You have a lot of sins on your list. if you want to be who i am, try to do better in this new life")
+                elif odp3 == 'C':
+                    creation = input('I want to be:')
+                print("Kazuko: pff-" f"{creation}? nah... you will be a magician!")
+        else:
+             print("Kazuko: then you will... magician.")        
+odp = choose_anwser2()
+#---17/18-----------
+#-------------------LMAO------------------
+
+print("and at that very moment everything is so white that it blinds you")
+print("obviously not for long")
+print("As soon as your eyes adjust you notice your own stats in front of you")
+#-
+print("-"*40)
+#-statsy
+name = input('what is your name?')
+life = 100
+mana = 50
+money = 0
+inventory = []
+#-
+print("name ="f"{name}")
+#-
+print("attacks:")
+print('- Normal attack - deals 2 - 8')
+print(' /locked/')
+#-
+print("your hp: " f"{life}" " and your mana:" f"{mana}" "better save it")
+print(f"{money}")
+#-
+print("-"*40)
+#-
+#---4--------
+
+#-----------------ataki-----------------
+from random import randint, choice
+
+def normal_attack():
+    return randint(2, 8)
+
+
+def Hanega_Song_of_the_Wind():
+    global mana
+    if mana < 10:
+        print("-"*40)
+        print("you don't have enough mana")
+        return 0
+    mana -= 10
+    return randint(10, 18)
+
+def Bane_of_All_Evil():
+    global mana
+    if mana < 20:
+        print("-"*40)
+        print("you don't have enough mana")
+        return 0
+    mana -= 20
+    return randint(20, 30)
+
+
+
+def choose_attack():
+    print('a/A - Normal attack - deals 2 - 8')
+    print('b/B - Hanega_Song_of_the_Wind - deals 10 - 18 dmg')
+    print('c/C - Bane_of_All_Evil - deals 20 - 30 dmg')
+    co = input().upper()
+    if co == 'A':
+        return normal_attack()
+    elif co == 'B':
+        return Hanega_Song_of_the_Wind()
+    elif co == 'C':
+        return Bane_of_All_Evil()
+    else:
+        print("too bad")
+        return 0
+#---------/26linijek-----------------
+
+#------------starter ataki--------
+
+def choose_starter_attack():
+    print('a/A - Normal attack - deals 2 - 8')
+    co = input().upper()
+    if co == 'A':
+        return normal_attack()
+    else:
+        print("too bad")
+        return 0
+#------7-----
+#-starter-atakiv2----------
+
+def choose_satrterattack():
+    print('a/A - Normal attack - deals 2 - 8')
+    print('b/B - Hanega_Song_of_the_Wind - deals 10 - 18 dmg')
+    co = input().upper()
+    if co == 'A':
+        return normal_attack()
+    elif co == 'B':
+        return Hanega_Song_of_the_Wind()
+    else:
+        print("too bad")
+        return 0
+#-----9----
+
+#------------starter pack-----------
+
+def random_starter_oponents():
+    starter_opponents = [
+        ["smol electro slime", 5, 3],
+        ["smol hydro slime", 5, 1],
+    ]
+    return choice(starter_opponents)
+#-------5/6------
+#----------------przeciwnicy1---------
+
+def random_oponents():
+    opponents = [
+        ["smol electro slime", 5, 3],
+        ["big electro slime", 10, 5],
+        ["smol hydro slime", 5, 1],
+        ["big hydro slime", 10, 2],
+    ]
+    return choice(opponents)
+#-------------8linijek----------
+
+#=----------------przeciwnicy2----------
+
+def random_oponents2():
+    opponents2 = [
+        ["Treasure Hoarders", 25, 10],
+        ["Fatui Pyro Agent", 35, 15],
+        ["Unusual Hilichurl", 5, 1],
+        ["Thunderhelm Lawachurl", 15, 5],
+    ]
+    return choice(opponents2)
+#------------8linijek--------------
+
+
+#-----old man------------
+def random_starznik():
+    straznik = [
+        ["guardian with a sword", 15, 6, ],
+        ["guard with a spear", 15, 7, ],
+    ]
+    return choice(straznik)
+#--------------------stage1----------------
+pokonane_stwóry = 0
+
+print('something is moving towards you')
+
+while life > 0:
+    opponent = random_starter_oponents()
+    print("-"*40)
+
+
+    while opponent[1] > 0 and life > 0:
+        print(f"{opponent[0]} attacks you!")
+        print(f"opponent have {opponent[1]} HP and deals {opponent[2]} damage")
+       
+        life -= opponent[2]
+        if life <= 0:
+            print("you, died, ON A FIRST DAY. Kazuko will not be happy")
+            break
+
+
+        print(f"you have {life} left HP and {mana} mana left ")
+        atak = choose_starter_attack()
+        opponent[1] -= atak
+        print(f"deals {atak} damage")
+
+        if opponent[1] <= 0:
+            print("your firsk kill!")
+
+
+    if opponent[1] <= 0:
+        pokonane_stwóry += 1
+
+    if life <100:
+        print("you gain 1hp")
+        life += 1
+    break
+
+print("-"*40)
+print(f"life left: {life} mana left: {mana}")
+print("new attack unlocked")
+print("-"*40)
+#--------------17linijekTvT-------------
+#---------- MIEJSCE NA LORE!!!!!!!!
+print("notices you some small fluffy creature ")
+print("Completely this creature is not worried about its life, as it approaches without worrying")
+print("???: I have never seen you here, where are you from? what is your name? why do you come?")
+print("this thing keeps asking questions")
+#-
+def choose_anwser3():
+    print('a/A - What/who, are you?')
+    print('b/B - wo owo wo slow down PLEASE')
+    print('c/C - uh... can you tell me where is the nearest city?')
+    print('else - *says nothing*')
+    odp1 = input().upper()
+    if odp1 == 'A':
+        print("???: oh? REALLY you are not from here, I see we are, uh, I can't actually remeber.. gotta ask my friend")
+    elif odp1 == 'B':
+            print("OH, sorry, did you wanted to ask somthing?")
+            print('a/A - what are you?')
+            print("b/B - do you know where is the nearest city?")
+            odp3 = input().upper()
+            if odp3 == 'A':
+                print("???: oh? REALLY you are not from here, I see we are, uh, I can't actually remeber.. gotta ask my friend")
+            if odp3 == 'B':
+                print("???: I KNOW! ")
+            else:
+                print("that thing is non stop talking")
+    elif odp1 == 'c':
+        print("???: I know!")
+    else:
+        print("that thing is non stop talking")
+odp1 = choose_anwser3()
+
+#-11----------------
+
+print("???: you can call me Hena!")
+print("Hena: and before we go to the city, here take this.")
+print("she gaves you a wand and some money")
+money += 50
+print("Hena: I have seen you fight before")
+print("Hena: this will help you control your maginc more")
+print("Hena: now follow me!")
+#-
+def choose_anwser3():
+    print('a/A - follow Hena')
+    print("b/B/else - don't follow Hena")
+    odp1 = input().upper()
+    if odp1 == 'A':
+        print("Hena: it's not that far from here")
+    else:
+        print("Hena: are you coming?")
+        print("Hena grabs you by the sleeve and pulls you along")
+
+print("Unfortunately, the road to this city will not be easy....")
+#-------5----------
+
+#---staty sie pojawiają--------
+
+# print("you look at your stats")
+# #-
+# print("name ="f"{name}")
+# #-
+# print("attacks:")
+# print('- Normal attack - deals 2 - 8')
+# print('new attack unlocked - Hanega_Song_of_the_Wind - deals 10 - 18 dmg')
+# print(' /locked/')
+# #-
+# print("your hp: " f"{life}" " and your mana:" f"{mana}" "better save it")
+# #-
+# print("-"*40)
+# #-
+
+# ---------------stage2----------------
+print("-"*40)
+print("stage2")
+
+while life > 0:
+    opponent = random_oponents()
+    print("-"*40)
+
+
+    while opponent[1] > 0 and life > 0:
+        print(f"{name} fight against {opponent[0]}")
+        print(f"opponent have {opponent[1]} HP and deals {opponent[2]} damage")
+       
+        life -= opponent[2]
+        if life <= 0:
+            print("you, died")
+            break
+
+
+        print(f"you have {life} HP and {mana} mana")
+        atak = choose_satrterattack()
+        opponent[1] -= atak
+        print(f"deals {atak} damage")
+
+        if opponent[1] <= 0:
+            print("you did it!")
+
+
+    if opponent[1] <= 0:
+        pokonane_stwóry += 1
+
+    if life <100:
+        print("you gain 1hp")
+        life += 1
+        
+    if mana <100:
+        print("you gain 5mana")
+        mana += 5
+    break
+
+print("-"*40)
+print(f"life left: {life} mana left: {mana}")
+
+#------------16linijek haha-----------
+
+#------------------stage3, to samo---------------
+print("-"*40)
+print("stage3")
+
+while life > 0:
+    opponent = random_oponents()
+    print("-"*40)
+
+
+    while opponent[1] > 0 and life > 0:
+        print(f"{name} fight against {opponent[0]}")
+        print(f"opponent have {opponent[1]} HP and deals {opponent[2]} damage")
+       
+        life -= opponent[2]
+        if life <= 0:
+            print("you, died")
+            break
+
+
+        print(f"you have {life} HP and {mana} mana")
+        atak = choose_satrterattack()
+        opponent[1] -= atak
+        print(f"deals {atak} damage")
+
+        if opponent[1] <= 0:
+            print("you did it!")
+
+
+    if opponent[1] <= 0:
+        pokonane_stwóry += 1
+
+    if life <100:
+        print("you gain 1hp")
+        life += 1
+        
+    if mana <100:
+        print("you gain 5mana")
+        mana += 5
+
+    break
+
+print("-"*40)
+print(f"life left: {life} mana left: {mana}")
+#------------15inijek (powtórka-----------
+#----stage4-----------------
+print("-"*40)
+print("stage4")
+
+while life > 0:
+    opponent = random_oponents()
+    print("-"*40)
+
+
+    while opponent[1] > 0 and life > 0:
+        print(f"{name} fight against {opponent[0]}")
+        print(f"opponent have {opponent[1]} HP and deals {opponent[2]} damage")
+       
+        life -= opponent[2]
+        if life <= 0:
+            print("you, died")
+            break
+
+
+        print(f"you have {life} HP and {mana} mana")
+        atak = choose_satrterattack()
+        opponent[1] -= atak
+        print(f"deals {atak} damage")
+
+        if opponent[1] <= 0:
+            print("you did it!")
+
+
+    if opponent[1] <= 0:
+        pokonane_stwóry += 1
+
+    if life <100:
+        print("you gain 5hp")
+        life += 5
+        
+    if mana <100:
+        print("you gain 5mana")
+        mana += 5
+    break
+
+print("-"*40)
+print(f"life left: {life} mana left: {mana}")
+#---16----
+
+#---------stage5, trudniejsze potwory.-------------
+
+print("Hena: it's really not far away now!")
+
+##---
+print("stage 5 --- its getting harder")
+
+while life > 0:
+    opponents2 = random_oponents2()
+    print("-"*40)
+
+
+    while opponents2[1] > 0 and life > 0:
+        print(f"{name} fight against {opponents2[0]}")
+        print(f"opponent have {opponents2[1]} HP and deals {opponents2[2]} damage")
+       
+        life -= opponents2[2]
+        if life <= 0:
+            print("you, died")
+            break
+
+
+        print(f"you have {life} HP and {mana} mana")
+        atak = choose_satrterattack()
+        opponents2[1] -= atak
+        print(f"deals {atak} damage")
+
+        if opponents2[1] <= 0:
+            print("you did it!")
+            pokonane_stwóry += 1
+            print(f"{opponents2} drops 10 mora")
+            money += 10
+
+
+    if life <100:
+        print("you gain 5hp")
+        life += 5
+        
+    if mana <100:
+        print("you gain 5mana")
+        mana += 5
+    break
+
+print("-"*40)
+print(f"life left: {life} mana left: {mana}")
+#-------------15 linijek------------
+
+print("Hena: we have arrived!")
+print("A hill with brick walls protecting a stunning palace is revealed before you")
+
+def choose_anwser3():
+    print('a/A - this place is stunning')
+    print("b/B/else - I didn't expect it to be that big ")
+    odp1 = input().upper()
+    if odp1 == 'A':
+        print("Hena: I know right!?")
+    else:
+        print("Hena: surprise you, this is exactly the smallest city in this area")
+odp1 = choose_anwser3()
+print("Hena: Let's go! no time wasting!")
+#-
+print("you have entered the city")
+print("you may notice that the only thing here is joy, there is no negativity despite so many monsters outside,")
+print("passing through the city, you will also notice many stalls, shops and some smaller places")
+print("Hena: ok! after this fight i will take you to our Healer first")
+
+def choose_anwser6():
+    print("a/A - I'm fine")
+    print("b/B/else - lets go then ")
+    odp6 = input().upper()
+    if odp6 == 'A':
+        print("Hena: yeah, you'r not.")
+    else:
+        print("Hena: I already like you")
+odp6 = choose_anwser6()
+
+print("^in front of the door of the healer^")
+print("Hena: don't ya worry, she does not bite")
+
+def choose_anwser7():
+    print("a/A -  why would she bite?")
+    print("else - is she like wolf or somthing?")
+    odp7 = input().upper()
+    if odp7 == 'A':
+        print("Hena: you will see :D")
+    else:
+        print("Hena: well yeah-")
+odp7 = choose_anwser7()
+
+print("Hena: Endra! we areeee heereeee~!")
+print("At the desk stands a beautiful woman, which I think is half wolf?")
+print("Endra: oh hello there Hena and..?")
+
+def choose_anwser8():
+    print(f"a/A -  Hello, my name is {name}")
+    print("else - *says nothing*")
+    odp8 = input().upper()
+    if odp8 == 'A':
+        print("Endra: Right,")
+    else:
+        print(f"Hena: HIs name is {name}")
+odp8 = choose_anwser8()
+
+#---20-----
+print(f"Endra: nice to met you {name}")
+print("Endra: So what brings you here?")
+print("Hena: You know,heal him up a bit")
+if life <100:
+    print("you gain 10hp")
+    life += 10
+print("blah blah nblah, they are talking about something not too interesting")
+print("Obviously Hena notices your boredom")
+print("Hena: You know, go walk around if you want, i have to do one more thing.")
+#-
+print("----"*40)
+print("lovly time skip")
+print("----"*40)
+#-
+
+print("Would you like to see your stats?")
+def choose_anwser8():
+    print("If yes click 'A'")
+    odp8 = input().upper()
+    if odp8 == 'A':
+        print(f"name = {name}")
+        print("attacks:")
+        print('- Normal attack - deals 2 - 8')
+        print('- Hanega_Song_of_the_Wind - deals 10 - 18 dmg')
+        print(' /locked/')
+        print(f"money = {money}")
+        print(f"hp: {life}") 
+        print(f"mana = {mana}")
+        
+odp8 = choose_anwser8()
+
+print("----"*40)
+#---6-----
+print("passing through the stalls, an old man interested you")
+print("old man: want to win the love of your beloved buy an elixir from Felix")
+life_potion = 20 
+mana_potion = 20 
+love_potion = 69
+sticky_honey = 1
+magic_stick = 666
+
+def choose_anwser9():
+    print("a/A -  *you approach the booth* Hello, what do you have?")
+    print("else - *ileave*")
+    odp9 = input().upper()
+    if odp9 == 'A':
+        print("hello young boy,")
+        print("we have:")
+        print(" love potion - 3500 mora,")
+        print(" life potion - 15 mora,")
+        print(" mana potion - 15 mora,")
+        print(" sticky honey - 10 mora,")
+        print(" magic stick - 10000000000000000000000000 mora")
+        def choose_anwser10():
+            print("a/A - love potion  ")
+            print("b\B - life potion  ")
+            print("c\C - mana potion  ")
+            print("d\D - sticky honey ")
+            print("else - what is magic stick?")
+            odp10 = input().upper()
+            if odp10 == 'A':
+                if money < 3500:
+                    print("you don't have enough mora")
+                else:
+                    print("old man: there you go")
+                    inventory.append(love_potion)
+            if odp10 == 'B':
+                if money < 15:
+                    print("you don't have enough mora")
+                else:  
+                    print("old man: there you go")
+                    inventory.append(life_potion)
+            if odp10 == 'C':
+                mana_potion = 20 
+                if money < 15:
+                    print("you don't have enough mora")
+                else:
+                    print("old man: there you go")
+                    inventory.append(mana_potion)
+            if odp10 == 'D':
+                if money <= 10:
+                    print("you don't have enough mora")
+                else:
+                    print("old man: there you go")
+                    inventory.append(sticky_honey)
+                    print("it does nothimg bruv")
+            else:
+                print("old man: A magic stick is an object that has supernatural properties or abilities. It is usually a wooden stick, often made of exotic or rare woods. It is characterized by a mystical aura and the ability to do magic. A magic stick can be a tool with which a wizard or witch invokes spells, controls magical energies or manipulates reality.  Sticks are sometimes personalized and customized to their owner, sometimes incorporating a core from the pen of a magical creature. They can also be decorated with runes, gemstones or other magical items that enhance their power. In many fantasy worlds, a magic stick is an integral attribute of a character who uses magic, serving as a tool for unleashing powerful spells and summoning supernatural forces.ilove your beloved buy elixir at Felix's")
+                print("old man: wonna buy?")
+                if money <= 10000000000000000000000000:
+                    print("I dont have mora,")
+                else:
+                    print("sure. XD")
+                    inventory.append(magic_stick)
+            odp10 = choose_anwser10()
+    else:
+        print("he's not happy")
+odp9 = choose_anwser9()
+
+#---------34------
+
+print("Would you like to see your stats? + inventory")
+def choose_anwser8():
+    print("If yes click 'A'")
+    odp8 = input().upper()
+    if odp8 == 'A':
+        print(f"name = {name}")
+        print("attacks:")
+        print('- Normal attack - deals 2 - 8')
+        print('- Hanega_Song_of_the_Wind - deals 10 - 18 dmg')
+        print(' /locked/')
+        print(f"money = {money}")
+        print(f"hp: {life}") 
+        print(f"mana = {mana}")
+        print(f"inventory = {inventory}")
+odp8 = choose_anwser8()
+
+print("Wanting to leave and continue your adventure the same man starts shouting something")
+print("old man: GUARDS!!! HE ROBBED ME")
+def choose_anwser11():
+    print("a/A - run")
+    print("else - ignore")
+    odp11 = input().upper()
+    if odp11 == 'A':
+        print("they are after you, and they catch up with you")
+    else:
+        print("guards approach you")
+odp11 = choose_anwser11()
+#-lkmao
+print(" guard1:  you are under arrest for stealing.")
+def choose_anwser12():
+    print("a/A - attack")
+    print("else - thats not me")
+    odp12 = input().upper()
+    if odp12 == 'A':
+        print("gurad: HEY!")
+    else:
+        print("guard: that man says opposite")
+        print(" so then you kick that man easly ")
+odp12 = choose_anwser12()
+#----14-----
+print(" great, you just startted a batle")
+
+while life > 0:
+    straznik = random_starznik()
+    print("-"*40)
+
+
+    while straznik[1] > 0 and life > 0:
+        print(f"{name} fight against {straznik[0]}")
+        print(f"opponent have {straznik[1]} HP and deals {straznik[2]} damage")
+       
+        life -= straznik[2]
+        if life <= 0:
+            print("you, died")
+            break
+
+
+        print(f"you have {life} HP and {mana} mana")
+        atak = choose_attack()
+        straznik[1] -= atak
+        print(f"deals {atak} damage")
+
+        if straznik[1] <= 0:
+            print("you did it!")
+            pokonane_stwóry += 1
+            print(f"{straznik} drops 10 mora")
+            money += 10
+
+
+    if life <100:
+        print("you gain 5hp")
+        life += 5
+        
+    if mana <100:
+        print("you gain 5mana")
+        mana += 5
+    break
+
+print("and that moment you realise you //// it up,")
+print("you are oficialy banned from this city")
+#---14----
+#----279---
