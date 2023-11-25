@@ -1,0 +1,66 @@
+#---6-----
+print("passing through the stalls, an old man interested you")
+print("old man: want to win the love of your beloved buy an elixir from Felix")
+life_potion = 20 
+mana_potion = 20 
+love_potion = 69
+sticky_honey = 1
+magic_stick = 666
+
+def choose_anwser9():
+    print("a/A -  *you approach the booth* Hello, what do you have?")
+    print("else - *ileave*")
+    odp9 = input().upper()
+    if odp9 == 'A':
+        print("hello young boy,")
+        print("we have:")
+        print(" love potion - 3500 mora,")
+        print(" life potion - 15 mora,")
+        print(" mana potion - 15 mora,")
+        print(" sticky honey - 10 mora,")
+        print(" magic stick - 10000000000000000000000000 mora")
+        def choose_anwser10():
+            print("a/A - love potion  ")
+            print("b\B - life potion  ")
+            print("c\C - mana potion  ")
+            print("d\D - sticky honey ")
+            print("else - what is magic stick?")
+            odp10 = input().upper()
+            if odp10 == 'A':
+                if money < 3500:
+                    print("you don't have enough mora")
+                else:
+                    print("old man: there you go")
+                    inventory.append(love_potion)
+            if odp10 == 'B':
+                if money < 15:
+                    print("you don't have enough mora")
+                else:  
+                    print("old man: there you go")
+                    inventory.append(life_potion)
+            if odp10 == 'C':
+                mana_potion = 20 
+                if money < 15:
+                    print("you don't have enough mora")
+                else:
+                    print("old man: there you go")
+                    inventory.append(mana_potion)
+            if odp10 == 'D':
+                if money <= 10:
+                    print("you don't have enough mora")
+                else:
+                    print("old man: there you go")
+                    inventory.append(sticky_honey)
+                    print("it does nothimg bruv")
+            else:
+                print("old man: A magic stick is an object that has supernatural properties or abilities. It is usually a wooden stick, often made of exotic or rare woods. It is characterized by a mystical aura and the ability to do magic. A magic stick can be a tool with which a wizard or witch invokes spells, controls magical energies or manipulates reality.  Sticks are sometimes personalized and customized to their owner, sometimes incorporating a core from the pen of a magical creature. They can also be decorated with runes, gemstones or other magical items that enhance their power. In many fantasy worlds, a magic stick is an integral attribute of a character who uses magic, serving as a tool for unleashing powerful spells and summoning supernatural forces.ilove your beloved buy elixir at Felix's")
+                print("old man: wonna buy?")
+                if money <= 10000000000000000000000000:
+                    print("I dont have mora,")
+                else:
+                    print("sure. XD")
+                    inventory.append(magic_stick)
+            odp10 = choose_anwser10()
+    else:
+        print("he's not happy")
+odp9 = choose_anwser9()
