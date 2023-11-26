@@ -1,18 +1,4 @@
-
-#-lkmao
-print(" guard1:  you are under arrest for stealing.")
-def choose_anwser12():
-    print("a/A - attack")
-    print("else - thats not me")
-    odp12 = input().upper()
-    if odp12 == 'A':
-        print("gurad: HEY!")
-    else:
-        print("guard: that man says opposite")
-        print(" so then you kick that man easly ")
-odp12 = choose_anwser12()
-#----14-----
-print(" great, you just startted a batle")
+print("Great, you just started a battle")
 
 while life > 0:
     straznik = random_starznik()
@@ -25,7 +11,7 @@ while life > 0:
        
         life -= straznik[2]
         if life <= 0:
-            print("you, died")
+            print("You have died")
             break
 
 
@@ -42,13 +28,15 @@ while life > 0:
 
 
     if life <100:
-        print("you gain 5hp")
+        print("You gain 5hp")
         life += 5
         
     if mana <100:
-        print("you gain 5mana")
+        print("You gain 5mana")
         mana += 5
     break
 
-print("and that moment you realise you //// it up,")
-print("you are oficialy banned from this city")
+print("And that moment you realise something")
+print("You are officialy banned from this city")
+#---14----
+#----279---
