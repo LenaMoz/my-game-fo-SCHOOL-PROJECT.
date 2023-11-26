@@ -13,7 +13,7 @@ while life > 0:
        
         life -= opponent[2]
         if life <= 0:
-            print("you, died")
+            print("Yoo have died")
             break
 
 
@@ -23,18 +23,18 @@ while life > 0:
         print(f"deals {atak} damage")
 
         if opponent[1] <= 0:
-            print("you did it!")
+            print("You did it!")
 
 
     if opponent[1] <= 0:
         pokonane_stwóry += 1
 
     if life <100:
-        print("you gain 1hp")
+        print("You gain 1hp")
         life += 1
         
     if mana <100:
-        print("you gain 5mana")
+        print("You gain 5mana")
         mana += 5
 
     break
