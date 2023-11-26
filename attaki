@@ -38,3 +38,48 @@ def choose_attack():
     else:
         print("You lose a turn")
         return 0
+
+def choose_starter_attack():
+    print('a/A - Normal attack - deals 2 - 8')
+    co = input().upper()
+    if co == 'A':
+        return normal_attack()
+    else:
+        print("You lose a turn")
+        return 0
+#------7-----
+#-starter-atakiv2----------
+
+def choose_satrterattack():
+    print('a/A - Normal attack - deals 2 - 8')
+    print('b/B - Hanega_Song_of_the_Wind - deals 10 - 18 dmg')
+    co = input().upper()
+    if co == 'A':
+        return normal_attack()
+    elif co == 'B':
+        return Hanega_Song_of_the_Wind()
+    else:
+        print("You lose a turn")
+        return 0
+#-----9----
+
+#------------starter pack-----------
+
+def random_starter_oponents():
+    starter_opponents = [
+        ["smol electro slime", 5, 3],
+        ["smol hydro slime", 5, 1],
+    ]
+    return choice(starter_opponents)
+#-------5/6------
+#----------------przeciwnicy1---------
+
+def random_oponents():
+    opponents = [
+        ["smol electro slime", 5, 3],
+        ["big electro slime", 10, 5],
+        ["smol hydro slime", 5, 1],
+        ["big hydro slime", 10, 2],
+    ]
+    return choice(opponents)
+#-------------8linijek----------
